@@ -25,24 +25,10 @@ export const HogeComponent: React.SFC<HogeProps> = (props: HogeProps) => {
                     onChange={(e) => props.updateEmail(e.target.value)}
                 />
             </div>
-            <table>
-                <tr>
-                <th>
-                        name
-                </th>
-                <th>
-                        email
-                </th>
-                </tr>
-                <tr>
-                    <td>
-                        {props.name}
-                    </td>
-                    <td>
-                        {props.email}
-                    </td>
-                </tr>
-            </table>
+
+            <div>
+                name: {props.name}, email: {props.email}
+            </div>
         </div>
     );
 };

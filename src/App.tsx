@@ -1,11 +1,19 @@
 import React from 'react';
 import HogeContainer from './containers/HogeContainer'
 import './App.css';
+import { HogeHooksComponent } from './components/HogeHooksComponent';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <HogeContainer />
+    <div>
+      <div>
+        <b>container:</b>
+        <HogeContainer />
+      </div>
+      <div>
+        <b>hooks:</b>
+        <HogeHooksComponent />
+      </div>
     </div>
   );
 }
