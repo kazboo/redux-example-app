@@ -1,35 +1,36 @@
 import * as React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { AppState } from '../store';
-import { hogeActions } from '../actions/HogeActions';
+import { hugaActions } from '../actions/HugaActions';
 
 export const HogeHooksComponent = () => {
 
     // access state
-    const name = useSelector((state: AppState) => state.hoge.name);
-    const email = useSelector((state: AppState) => state.hoge.email);
+    const tel = useSelector((state: AppState) => state.huga.tel);
+    const address = useSelector((state: AppState) => state.huga.address);
     const dispatch = useDispatch();
+
 
     return (
         <div>
             <div>
                 <input
                     type="text"
-                    placeholder="name"
-                    value={name}
-                    onChange={(e) => dispatch(hogeActions.updateName(e.target.value))}
+                    placeholder="tel"
+                    value={tel}
+                    onChange={(e) => dispatch(hugaActions.updateTel(e.target.value))}
                 />
             </div>
             <div>
                 <input
                     type="text"
-                    placeholder="email"
-                    value={email}
-                    onChange={(e) => dispatch(hogeActions.updateEmail(e.target.value))}
+                    placeholder="address"
+                    value={address}
+                    onChange={(e) => dispatch(hugaActions.updateAddress(e.target.value))}
                 />
             </div>
             <div>
-                name: {name}, email: {email}
+                tel: {tel}, address: {address}
             </div>
         </div>
     );
