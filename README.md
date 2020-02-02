@@ -1,7 +1,7 @@
 # redux-example-app
 redux hooks api
 
-* [redux hooks api](https://react-redux.js.org/next/api/hooks)
+* [redux hooks api](https://react-redux.js.org/next/api/hooks])
 * [Redux入門](https://qiita.com/kitagawamac/items/49a1f03445b19cf407b7)
 * [Redux/react-reduxチートシート](https://qiita.com/morrr/items/2e284ae691af513edacc)
 * [React-typescript-HOC](https://blog.mitsuruog.info/2018/02/react-typescript-hoc)
